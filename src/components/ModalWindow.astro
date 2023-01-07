@@ -1,0 +1,20 @@
+---
+export interface Props {
+  modalId: string;
+  title?: string;
+  description?: string;
+  img?: string;
+  imgAlt?: string;
+}
+
+const { modalId, title, description, img, imgAlt } = Astro.props;
+---
+
+<input type="checkbox" id={modalId} class="modal-toggle" />
+<label for={modalId} class="modal cursor-pointer">
+  <label class="modal-box max-w-3xl max-h-3xl" for="">
+    {title && <h3 class="text-lg font-bold">{title}</h3>}
+    {description && <p class="py-4">{description}</p>}
+    {img && <img src={img} alt={imgAlt} class="m-auto w-auto max-h-[768px]" />}
+  </label>
+</label>

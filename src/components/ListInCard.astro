@@ -1,0 +1,19 @@
+---
+export interface Props {
+  title: string;
+  listItem: string[];
+}
+
+const { title, listItem } = Astro.props;
+---
+
+<ul class="mx-2 mb-3">
+  <li
+    class="block max-w-none p-3 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+  >
+    <h5 class="mb-2 font-bold tracking-tight">{title}</h5>
+    <ul class="list-disc mx-6 columns-2">
+      {listItem.map((item) => <li>{item}</li>)}
+    </ul>
+  </li>
+</ul>

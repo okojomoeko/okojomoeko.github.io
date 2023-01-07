@@ -1,0 +1,105 @@
+---
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import { Icon } from "astro-icon";
+import ListInCard from "../components/ListInCard.astro";
+---
+
+<style lang="css">
+  [astro-icon] {
+    /* color: #222; */
+    display: inline-block;
+    width: 1.2rem;
+    vertical-align: middle;
+  }
+</style>
+
+<!-- <BaseLayout title="About"> --><!-- <div class="mb-5">
+  <div class="text-xl w-full font-bold">Profile</div>
+</div> -->
+<div class="mb-10 text-justify"></div>
+
+<div class="mb-5">
+  <div class="text-xl w-full font-bold">Education</div>
+</div>
+<div class="time-line-container grid gap-4 mb-10">
+  <TimeLineElement
+    year="2012-2016"
+    title="某大学で情報科学勉強"
+    desc="ちょっとだけOpenCV触ったりした"
+  />
+  <TimeLineElement
+    year="2016-2018"
+    title="某大学院で画像認識の勉強"
+    desc="ちょっどだけ機械学習とMATLABを勉強した"
+  />
+</div>
+
+<div class="mb-5">
+  <div class="text-xl w-full font-bold">Experience</div>
+</div>
+<div class="time-line-container mb-10">
+  <TimeLineElement
+    year="2018-2020"
+    title="某電気メーカーに入社"
+    desc="ネットワークシステムいじり。Ciscoのルータやスイッチなど触ったりネットワークテストしたり、上流工程の開発とシステム展開した"
+  />
+  <TimeLineElement
+    year="2020-"
+    title="転職"
+    desc="クラウドを用いたシステム開発に従事"
+  />
+</div>
+
+<div class="mb-5">
+  <div class="text-xl font-bold">
+    Certifications <Icon name="mdi:certificate" />
+  </div>
+</div>
+
+<ul class="list-disc columns-2 mx-6 mb-10 gap-2">
+  <li>
+    <a
+      href="https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/"
+      target="_blank"
+    >
+      AWS Solution Architect Associate</a
+    >
+  </li>
+  <li>
+    <a href="https://www.jdla.org/certificate/general/" target="_blank">
+      G検定</a
+    >
+  </li>
+  <li>
+    <a href="https://www.jdla.org/certificate/engineer/" target="_blank">
+      E資格</a
+    >
+  </li>
+</ul>
+
+<!-- <div class="mb-5">
+  <div class="text-xl w-full font-bold">
+    Interests <Icon name="mdi:heart" />
+  </div>
+</div> -->
+
+<div class="mb-5">
+  <div class="text-xl w-full font-bold">
+    Skills <Icon name="mdi:wrench" />
+  </div>
+</div>
+<ul class="md:columns-2 columns-1">
+  <li>
+    <ListInCard
+      title="Program Languages"
+      listItem={["C++", "Java", "Python", "MATLAB", "JavaScript", "TypeScript"]}
+    />
+  </li>
+  <li>
+    <ListInCard
+      title="Technology"
+      listItem={["OpenCV", "Docker", "Node.js", "GraphQL", "Cisco", "React"]}
+    />
+  </li>
+</ul>
+<!-- </BaseLayout> -->
