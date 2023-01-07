@@ -1,9 +1,15 @@
 name: Playwright Tests
+
+permissions:
+  pull-requests: write
+  contents: write
+
 on:
   push:
     branches: [develop]
   pull_request:
     branches: [develop]
+
 jobs:
   test:
     timeout-minutes: 60
@@ -13,16 +19,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Get Node Cache Directory
-        id: node-cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
       - name: Install dependencies
-        if: steps.node-cache.outputs.cache-hit != 'true'
-        run: npm install
+        run: npm ci
+      - name: Build Astro
+        run: npm run build
+
+      - name: Get installed Playwright version
+        id: playwright-version
+        run: echo "PLAYWRIGHT_VERSION=$(node -e "console.log(require('./package-lock.json').dependencies['@playwright/test'].version)")" >> $GITHUB_ENV
 
       - name: Cache playwright binaries
         uses: actions/cache@v3
@@ -30,16 +34,14 @@ jobs:
         with:
           path: |
             ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-playwright-
+          key: ${{ runner.os }}-playwright-${{ env.PLAYWRIGHT_VERSION }}
       - name: Install Playwright Browsers
         if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
       - name: Install Playwright's dependencies
         if: steps.playwright-cache.outputs.cache-hit == 'true'
         run: npx playwright install-deps
-      - name: Build Astro
-        run: npm run build
+
       - name: Run Playwright tests
         run: npx playwright test
       - uses: actions/upload-artifact@v3
@@ -48,3 +50,20 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+
+  auto_merge:
+    runs-on: ubuntu-latest
+    needs: test
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.3.4
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Enable auto-merge for Dependabot PRs
+        if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-patch' }}
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
