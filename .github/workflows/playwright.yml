@@ -5,9 +5,10 @@ permissions:
   contents: write
 
 on:
-  pull_request_target:
-    branches:
-      - develop
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
 
 jobs:
   test:
