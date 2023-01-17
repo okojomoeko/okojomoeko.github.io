@@ -13,6 +13,7 @@
     "e2e:all": "playwright test",
     "e2e:chromium": "playwright test --project=chromium",
     "pre-commit": "lint-staged",
+    "prepare": "husky install",
     "lint": "npx eslint '{src,tests}/**/*.{astro,js,ts,tsx}' --max-warnings=0 --fix",
     "format": "npx eslint '{src,tests}/**/*.{astro,js,ts,tsx}' --max-warnings=0 --fix && npx prettier --write '{src,tests}/**/*.{astro,js,ts,tsx}'"
   },
