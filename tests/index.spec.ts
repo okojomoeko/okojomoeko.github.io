@@ -4,14 +4,20 @@ const THRESHOLD = 0.05;
 
 test("first landing page", async ({ page }) => {
   await page.goto("/");
-  await expect(page).toHaveScreenshot({ threshold: THRESHOLD });
+  await expect(page).toHaveScreenshot({
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
+  });
 });
 
 test("first landing page with limit width", async ({ page }) => {
   await page.setViewportSize({ width: 1023, height: 1000 });
   await page.goto("/");
 
-  await expect(page).toHaveScreenshot({ threshold: THRESHOLD });
+  await expect(page).toHaveScreenshot({
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
+  });
 });
 
 test("about button", async ({ page }) => {
@@ -19,7 +25,10 @@ test("about button", async ({ page }) => {
 
   await page.click("//li/a[@href='/#about']");
 
-  await expect(page).toHaveScreenshot({ threshold: THRESHOLD });
+  await expect(page).toHaveScreenshot({
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
+  });
 });
 
 test("about button with limit width", async ({ page }) => {
@@ -29,7 +38,10 @@ test("about button with limit width", async ({ page }) => {
   await page.click("//label[contains(@for, 'drawer')]");
   await page.click("//li/a[@href='/#about']");
 
-  await expect(page).toHaveScreenshot({ threshold: THRESHOLD });
+  await expect(page).toHaveScreenshot({
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
+  });
 });
 
 test("projects button", async ({ page }) => {
@@ -40,8 +52,9 @@ test("projects button", async ({ page }) => {
   const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
-    threshold: THRESHOLD,
     mask: [maskedElement],
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
   });
 });
 
@@ -55,8 +68,9 @@ test("projects button with limit width", async ({ page }) => {
   const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
-    threshold: THRESHOLD,
     mask: [maskedElement],
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
   });
 });
 
@@ -67,8 +81,9 @@ test("show latest project button", async ({ page }) => {
   const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
-    threshold: THRESHOLD,
     mask: [maskedElement],
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
   });
 });
 
@@ -81,7 +96,8 @@ test("show latest project button with limit width", async ({ page }) => {
   const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
-    threshold: THRESHOLD,
     mask: [maskedElement],
+    threshold: THRESHOLD,
+    maxDiffPixelRatio: THRESHOLD,
   });
 });
