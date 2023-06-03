@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@astrojs/partytown": "^1.2.0",
-    "@playwright/test": "^1.29.2",
+    "@playwright/test": "^1.32.3",
     "@tailwindcss/typography": "^0.5.9",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
