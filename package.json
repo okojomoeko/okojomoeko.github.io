@@ -1,49 +1,57 @@
 {
-  "name": "Astro Modern Personal Website",
-  "description": "okojomoeko's astro portfolio",
+  "name": "okojomoeko-portfolio",
+  "description": "okojomoeko's astro portfolio website",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
+  "packageManager": "pnpm@10.12.4",
+  "pnpm": {
+    "overrides": {
+      "postcss-selector-parser": ">=6.1.5"
+    }
+  },
+  "engines": {
+    "node": ">=22.23.4",
+    "pnpm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "e2e:all": "playwright test",
-    "e2e:chromium": "playwright test --project=chromium",
-    "pre-commit": "lint-staged",
-    "prepare": "husky install; npx playwright install",
-    "lint": "npx eslint '{src,tests}/**/*.{astro,js,ts,tsx}' --max-warnings=0 --fix",
-    "format": "npx eslint '{src,tests}/**/*.{astro,js,ts,tsx}' --max-warnings=0 --fix && npx prettier --write '{src,tests}/**/*.{astro,js,ts,tsx}'"
-  },
-  "lint-staged": {
-    "*.{astro,js,ts,tsx}": [
-      "npx eslint '{src,tests}/**/*.{astro,js,ts,tsx}' --max-warnings=5 --fix",
-      "npx prettier --write '{src,tests}/**/*.{astro,js,ts,tsx}'"
-    ]
+    "check": "astro check",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "test:e2e:chromium": "playwright test --project=chromium",
+    "test:e2e:update": "playwright test --update-snapshots",
+    "audit": "pnpm audit --audit-level=high",
+    "verify": "pnpm check && pnpm lint && pnpm build && pnpm test:e2e",
+    "prepare": "lefthook install || true"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
-    "@astrojs/rss": "^2.4.3",
-    "@astrojs/sitemap": "^1.3.3",
-    "@astrojs/tailwind": "^4.0.0",
-    "@fontsource/sawarabi-gothic": "^5.0.3",
-    "astro": "^2.8.3",
-    "astro-icon": "^0.8.0",
-    "daisyui": "^3.1.6"
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/mdx": "^8.1.2",
+    "@astrojs/partytown": "^2.1.9",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource/sawarabi-gothic": "^5.3.1",
+    "@iconify-json/mdi": "^1.2.3",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.4",
+    "astro": "^7.4.5",
+    "astro-icon": "^1.2.0",
+    "daisyui": "^5.7.50",
+    "tailwindcss": "^4.3.4",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "@astrojs/partytown": "^1.2.3",
-    "@playwright/test": "^1.36.1",
-    "@tailwindcss/typography": "^0.5.9",
-    "@typescript-eslint/eslint-plugin": "^5.59.11",
-    "@typescript-eslint/parser": "^5.59.11",
-    "eslint": "^8.45.0",
-    "eslint-plugin-astro": "^0.27.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "prettier": "^2.8.8",
-    "prettier-plugin-astro": "^0.10.0"
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^22.13.0",
+    "lefthook": "^2.2.2",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.2"
   }
 }

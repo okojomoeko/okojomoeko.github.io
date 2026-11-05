@@ -1,10 +1,11 @@
 ---
 import TimeLineElement from "../components/cv/TimeLine.astro";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import ListInCard from "../components/ListInCard.astro";
 ---
 
 <style lang="css">
+  [data-icon],
   [astro-icon] {
     /* color: #222; */
     display: inline-block;
@@ -13,7 +14,8 @@ import ListInCard from "../components/ListInCard.astro";
   }
 </style>
 
-<!-- <BaseLayout title="About"> --><!-- <div class="mb-5">
+<!-- <BaseLayout title="About"> -->
+<!-- <div class="mb-5">
   <div class="text-xl w-full font-bold">Profile</div>
 </div> -->
 <div class="mb-10 text-justify"></div>
@@ -62,18 +64,18 @@ import ListInCard from "../components/ListInCard.astro";
       href="https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/"
       target="_blank"
     >
-      AWS Solution Architect Associate</a
-    >
+      AWS Solution Architect Associate
+    </a>
   </li>
   <li>
     <a href="https://www.jdla.org/certificate/general/" target="_blank">
-      G検定</a
-    >
+      G検定
+    </a>
   </li>
   <li>
     <a href="https://www.jdla.org/certificate/engineer/" target="_blank">
-      E資格</a
-    >
+      E資格
+    </a>
   </li>
 </ul>
 

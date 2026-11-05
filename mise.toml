@@ -1,0 +1,58 @@
+[tools]
+node = "26.13.0"
+pnpm = "10.12.4"
+lefthook = "2.2.2"
+
+[tasks.dev]
+description = "Start Astro development server"
+run = "pnpm dev"
+
+[tasks.build]
+description = "Build static site for production"
+run = "pnpm build"
+
+[tasks.preview]
+description = "Preview production build locally"
+run = "pnpm preview"
+
+[tasks.check]
+description = "Run Astro type and component check"
+run = "pnpm check"
+
+[tasks.lint]
+description = "Lint code"
+run = "pnpm lint"
+
+[tasks.format]
+description = "Format code with Prettier"
+run = "pnpm format"
+
+[tasks."test:e2e"]
+description = "Run Playwright E2E and visual tests"
+run = "pnpm test:e2e"
+
+[tasks."test:e2e:update"]
+description = "Update Playwright visual snapshots"
+run = "pnpm test:e2e:update"
+
+[tasks.audit]
+description = "Check for security vulnerabilities in dependencies"
+run = "pnpm audit --audit-level=high"
+
+[tasks.verify]
+description = "Integrated verification pipeline (check, lint, build, test, audit)"
+run = """
+mise run check
+mise run lint
+mise run build
+mise run test:e2e
+mise run audit
+"""
+
+[tasks."update:check"]
+description = "Check for available package updates"
+run = "ncu"
+
+[tasks."update:apply"]
+description = "Apply package updates and run verification"
+run = "bash scripts/maintenance.sh update"

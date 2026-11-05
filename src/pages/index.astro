@@ -4,7 +4,25 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import Heading from "../components/Heading.astro";
 import About from "./about.astro";
 
-const projects = (await Astro.glob("./projects/*.{md,mdx}")).sort(
+interface ProjectFrontmatter {
+  title: string;
+  description?: string;
+  pubDate: string;
+  heroImage?: string;
+  badge?: string;
+  tags?: string[];
+}
+
+interface MarkdownInstance {
+  frontmatter: ProjectFrontmatter;
+  url?: string;
+}
+
+const projectFiles = import.meta.glob<MarkdownInstance>(
+  "./projects/*.{md,mdx}",
+  { eager: true }
+);
+const projects = Object.values(projectFiles).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
@@ -44,21 +62,19 @@ const last_projects = projects.slice(0, 3);
       <Heading text="Latest Projects" id="projects" />
     </div>
   </div>
-  {
-    last_projects.map((project) => (
-      <>
-        <HorizontalCard
-          title={project.frontmatter.title}
-          img={project.frontmatter.heroImage}
-          desc={project.frontmatter.description}
-          url={project.url}
-          badge={project.frontmatter.badge}
-          target="_self"
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  {last_projects.map((project) => (
+    <>
+      <HorizontalCard
+        title={project.frontmatter.title}
+        img={project.frontmatter.heroImage}
+        desc={project.frontmatter.description}
+        url={project.url}
+        badge={project.frontmatter.badge}
+        target="_self"
+      />
+      <div class="divider my-0" />
+    </>
+  ))}
 
   <!-- <HorizontalCard
     title="Demo Project 1"

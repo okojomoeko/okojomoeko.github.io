@@ -2,8 +2,8 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
-
-import tailwind from "@astrojs/tailwind";
+import icon from "astro-icon";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,17 +11,18 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap(),
-    tailwind(),
+    icon({
+      include: {
+        mdi: ["*"],
+      },
+    }),
     partytown({
-      // Adds dataLayer.push as a forwarding-event.
       config: {
         forward: ["dataLayer.push"],
       },
     }),
   ],
   vite: {
-    ssr: {
-      external: ["svgo"],
-    },
+    plugins: [tailwindcss()],
   },
 });

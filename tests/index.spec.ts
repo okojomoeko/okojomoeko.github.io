@@ -49,7 +49,7 @@ test("projects button", async ({ page }) => {
 
   await page.click("//li/a[contains(@href, 'projects/1')]");
 
-  const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
+  const maskedElement = page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
     mask: [maskedElement],
@@ -65,7 +65,7 @@ test("projects button with limit width", async ({ page }) => {
   await page.click("//label[contains(@for, 'drawer')]");
   await page.click("//li/a[contains(@href, 'projects/1')]");
 
-  const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
+  const maskedElement = page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
     mask: [maskedElement],
@@ -78,7 +78,7 @@ test("show latest project button", async ({ page }) => {
   await page.goto("/");
 
   await page.click("//a[contains(@href, 'projects/')]");
-  const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
+  const maskedElement = page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
     mask: [maskedElement],
@@ -93,7 +93,7 @@ test("show latest project button with limit width", async ({ page }) => {
 
   await page.click("//a[contains(@href, 'projects/')]");
 
-  const maskedElement = await page.locator("//img[contains(@src, '.gif')]");
+  const maskedElement = page.locator("//img[contains(@src, '.gif')]");
   await expect(page).toHaveScreenshot({
     animations: "disabled",
     mask: [maskedElement],

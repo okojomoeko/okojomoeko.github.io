@@ -1,0 +1,31 @@
+# lefthook.yml — Fast Git Hooks for okojomoeko.github.io
+pre-commit:
+  parallel: true
+  commands:
+    prettier:
+      glob: "*.{js,ts,mjs,cjs,json,astro,css,md,mdx,yml,yaml}"
+      run: pnpm prettier --check {staged_files}
+
+    secret-scan:
+      run: |
+        if git diff --cached --name-only | grep -E '\.env$|\.env\.local$|\.pem$|\.key$|id_rsa'; then
+          echo "❌ ERROR: Sensitive credentials detected in staged files!"
+          exit 1
+        fi
+
+    no-large-binaries:
+      run: |
+        for f in $(git diff --cached --name-only); do
+          if [ -f "$f" ] && [ $(wc -c < "$f") -gt 512000 ]; then
+            echo "❌ ERROR: File $f exceeds 500KB limit! Please compress before committing."
+            exit 1
+          fi
+        done
+
+pre-push:
+  parallel: false
+  commands:
+    check:
+      run: pnpm check
+    build:
+      run: pnpm build

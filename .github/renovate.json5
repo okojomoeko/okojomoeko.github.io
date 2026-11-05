@@ -1,0 +1,26 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":automergePatch",
+    ":automergeMinor",
+  ],
+  baseBranches: ["main"],
+  timezone: "Asia/Tokyo",
+  schedule: ["before 6am on monday"],
+  packageRules: [
+    {
+      matchUpdateTypes: ["minor", "patch"],
+      matchCurrentVersion: "!/^0/",
+      automerge: true,
+      automergeType: "pr",
+    },
+    {
+      matchPackagePatterns: ["*"],
+      matchPackageNames: ["@playwright/test"],
+      automerge: false,
+    },
+  ],
+}

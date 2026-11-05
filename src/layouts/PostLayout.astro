@@ -25,26 +25,22 @@ const {
 
     <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
       <label for="my-modal-1">
-        {
-          heroImage && (
-            <img
-              src={heroImage}
-              alt={title}
-              class="btn btn-ghost w-full h-80 object-cover"
-            />
-          )
-        }
+        {heroImage && (
+          <img
+            src={heroImage}
+            alt={title}
+            class="btn btn-ghost w-full h-80 object-cover"
+          />
+        )}
       </label>
       <h1 class="title my-2 text-4xl font-bold">{title}</h1>
       {pubDate && <time>{pubDate}</time>}
-      {
-        updatedDate && (
-          <div>
-            {" "}
-            Last updated on <time>{updatedDate}</time>{" "}
-          </div>
-        )
-      }
+      {updatedDate && (
+        <div>
+          {" "}
+          Last updated on <time>{updatedDate}</time>{" "}
+        </div>
+      )}
       <div class="divider my-2"></div>
       <slot />
     </article>
@@ -56,8 +52,9 @@ const {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      ><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
-      ></path>
-    </svg> Projects</a
-  >
+    >
+      <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path>
+    </svg>{" "}
+    Projects
+  </a>
 </BaseLayout>
