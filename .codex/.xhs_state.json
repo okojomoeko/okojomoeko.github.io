@@ -1,0 +1,850 @@
+{
+  "files": [
+    {
+      "path": "model-catalog.local.json",
+      "hash": "83404c4c59892853896cd1cd81444cfdad6b78007936d8d36878649d79507365",
+      "origin": "settings"
+    },
+    {
+      "path": "hooks.json",
+      "hash": "766f2ebb0394f1446a347e99ca3b7551b4b1cca92d2831f8ad58b09e9defc9b8",
+      "origin": "settings"
+    },
+    {
+      "path": "config.toml",
+      "hash": "9733cea20a409edfa9bca54ee2d099515851240a4a9937d2760ad02724a71add",
+      "origin": "settings"
+    },
+    {
+      "path": "AGENTS.md",
+      "hash": "6ca1d33875cec5c7c021c2ec0eeb6ef9d6b972b5c5c8ed0baf38418d7acc9186",
+      "origin": "settings"
+    },
+    {
+      "path": "rules/coding-style.md",
+      "hash": "00e764199c54f08baa77b8292dd431687d5573343f7547221340c73d978c2a51",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/testing.md",
+      "hash": "e46db442e2156136a0158454e77ab4164aa3074093929b755608cb6912a50eee",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/honesty-and-failfast.md",
+      "hash": "4a39d7da31b4ee1d120ab360ba6332ed2fce6108578e12902d77305e6d878b6c",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/subagents-hierarchy.md",
+      "hash": "3b7da1f10814672d894912ef8eed11b48775b463bc67278f46cf01f378d251d7",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/security.md",
+      "hash": "5d70435580f2082ef445b4b96f21cc82754981ab4cbf1fdb3e37db2a9fb7d0fb",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/loop-engineering.md",
+      "hash": "509c17c70db519ccd477368fa8ca4d34623e6ee10b66fcf607bf2cfaec2adb25",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/zvec.md",
+      "hash": "7636daa0e28adb686108e63b16794561d6dd3662b8c0564e21a51fcd9f57e116",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/semble.md",
+      "hash": "1a2ed6a6c6eba27c9b304ef5755c8596049cb59eec89569300d7a86ccdd521e7",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/soul-and-protocol.md",
+      "hash": "c15be6803de9b1769c5233ce72bddcc1d408d403d568a5df6733f45ab862f11d",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/natural-japanese.md",
+      "hash": "9fb69c2e78340dab6d9899e800ad5433680eeb5c722521413cd2048451da2f59",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/autonomous-loop-principles.md",
+      "hash": "afca6992a0fb3c72c5aec7bdf2d37f51bd4bca8e162fce5c4a0923b9dea5b99f",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/code-review.md",
+      "hash": "e5e204d06df177d420144c08bf662e7ac05faec20dd6634066d224620964f958",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/exploration-cascade.md",
+      "hash": "6e0053aef20a252e4b101bddd3844d05b496f8ebf403bc234a429ec3b9db2ac2",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/solution-efficiency.md",
+      "hash": "07cd75a560db890941c4927638478392fb75514e0c8d3d1944ffad5b45c1ab64",
+      "origin": "rules"
+    },
+    {
+      "path": "rules/common/native-tool-preference.md",
+      "hash": "c5c212ce6debbc5734d0a9888220d4c306c9f3177fe2a701c56f6b960b5bb522",
+      "origin": "rules"
+    },
+    {
+      "path": "skills/seo-mastery-jp/structured-data.md",
+      "hash": "769bfb22d7b5451b9d85a832eb24369e3617dc98816b107fdd264e96bbfb41ca",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/seo-mastery-jp/SKILL.md",
+      "hash": "18a985c3d5b12479f3323d09ce17a06b23e35c4f3c0047b576f9662f05fa313c",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/seo-mastery-jp/content-seo.md",
+      "hash": "b856a9cdb77653ab482794fb76260cff8cab801bd37731c4bde67ff5c2b1e789",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/seo-mastery-jp/technical-seo.md",
+      "hash": "97124c4e9e840f45966998ae6e12946cce68a68569e71a4ed6c1ca53d07da331",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/seo-mastery-jp/core-web-vitals.md",
+      "hash": "a3de0f5ecd6fb999d018ee1e44c31d49f007350fb81871f9c16ea92b490b72b5",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/seo-mastery-jp/audit-workflow.md",
+      "hash": "9ae51d329b5394eeb3db0cb2d94f97179548553ec46deb49794ccdbd2a9dc60f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/recap/EXAMPLES.md",
+      "hash": "18c2df482626e52524474eaec9501dc52d0cc8c2325605c23065440c387d7378",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/recap/SKILL.md",
+      "hash": "33e992570d0e10b614e71515f0611e3ed8d6a7264ecc14e9fb085d438acf880b",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/japanese-technical-writing-expert/SKILL.md",
+      "hash": "e460a3b9e258ec779e435f8a146ae2731ea39b4bc0678650db4b6d12ef6271ea",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/japanese-technical-writing-expert/references/templates.md",
+      "hash": "da8ef96729beeaa8e539bc178c316b200b00fa4aee549213381aaa6e72ed10f4",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/japanese-technical-writing-expert/references/writing-style.md",
+      "hash": "8e8d5691a46fd747dd12c60f843d1317c0b7fc2c1eedcde1fac350c9a7d8ccc8",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/thinking-engine/SKILL.md",
+      "hash": "f5790be702f5e57c46c7a9d3fc8e11afa85e345743101457fafa9974fbcc9237",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/thinking-engine/references/frameworks.md",
+      "hash": "63593d0e6bc7fb13f75dd8093827e1fa2275f56f1f9009c61cd62de564788b8e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/zvec-search/SKILL.md",
+      "hash": "0266a9750bed94090167fa173a5ba2ac827afb47abcef7c1dbd6343f2415a40e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/agentmemory-mcp-tools/REFERENCE.md",
+      "hash": "84171dcda10c21e01a672c1dc29b23b848a2a4045264063ced2f01fb5929d806",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/agentmemory-mcp-tools/SKILL.md",
+      "hash": "8079643ede4e33ba0e38c05eeccaad11d493cfaac6c96fcb6ef807f2412d08d7",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/astro-add-integration/SKILL.md",
+      "hash": "241cd5b0adf5a8a5a0b4a762ebee84f5261ceb57c198315391072a3df1725d13",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/agentmemory-config/REFERENCE.md",
+      "hash": "0411f5a424ac351f88159bb3387872904eb701221a45f55c396c3296df3a055f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/agentmemory-config/SKILL.md",
+      "hash": "14fce9b1675c702c2ab2e8e6163a05eb5b36e0260e5c449cbecadb8accfc4c32",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/commit-history/EXAMPLES.md",
+      "hash": "ebbc149695a107663966f1d0aa8e53a8eee93b98b0b81977f398277e7da40576",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/commit-history/SKILL.md",
+      "hash": "69f1379cfbc86b66d6741c0bad297fb9a7cd02540d9a7656d0458e6af48dc804",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/playwright-testing/API_REFERENCE.md",
+      "hash": "58d60d09813a7c04bb0ad3c7b7d5e3250dc0e19c24836654327c97d3a1567b9e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/playwright-testing/run.js",
+      "hash": "f2afe1a17379548abee60e91c9cee9a3907ff5ae9a2423d9190e45ace761399d",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/playwright-testing/package-lock.json",
+      "hash": "a0502f20d5c475c9654b8a6faa69263d2eb7ab0c7898c3c0a2490ddc75316df3",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/playwright-testing/package.json",
+      "hash": "8f1870c8f1124cadae0bf493eccdbc8e2df48124f90d2eecaef0c43638906d8e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/playwright-testing/SKILL.md",
+      "hash": "6dc254f552392e1f5b8704434e982cd26375d04ebe815084d1b47af1ee2a971f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/playwright-testing/lib/helpers.js",
+      "hash": "b837864b43126da1c0fc216b4d555b14a52c78bd78e0075af0c6acd1efa0e010",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/session-history/EXAMPLES.md",
+      "hash": "0a089f68ad9f7ca87b8dcc2536ce5d8e8a7b20980e602c41c29abb9d4b9afc11",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/session-history/SKILL.md",
+      "hash": "6aec3cfd96a3630fa9c7985f1db5b0049cafdb1d4b0726c5160928dcada41a0b",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/.DS_Store",
+      "hash": "4bc5bea83610f1c5d3bb972d6cd2b262bdeb1a93c60a1c55030f357478a8abe3",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/SKILL.md",
+      "hash": "7fbcbe1b8f0053a39df6bff8467867f6d886e06a56133b8054c9ad9b9369ce0b",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/references/ruff.md",
+      "hash": "2a3dca8ccd71f9041ea76d3b62fe217b9a4465e9c6ad53c32379d0a70cfac953",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/references/uv.md",
+      "hash": "a4619d713fe021fb0ce18229dd50102cc6fbc5d3c6e1442073354104e909f394",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/references/architecture.md",
+      "hash": "082f4c98f1b6d475b72bdd8fe8676cbf59af0ef582c3bfce709d3efe97e6af4e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/references/great-expectations.md",
+      "hash": "d00c754d848dcc40f7812d3a7ccc3f44661d7033857a9605d8691004db545b39",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/references/lizard.md",
+      "hash": "abd22aefb4e070b133c304d0d4d71eccfdda998ceaf42d46ff8a1e3b7b2d15a0",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/references/pyrefly.md",
+      "hash": "34b2fe1c4e8e1e73b27a8321f8e4a9726a7e515b833ff4c53c6810ff8e60c543",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/python-quality-guardian/references/hypothesis.md",
+      "hash": "fac0b74e076d6712fe8c86aefc62053eda5048b32e7335e6fe36a1975cca62c6",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/handoff/EXAMPLES.md",
+      "hash": "1fa85f64e20fe8bc07cae31e6a4fb9a58eff354375d24e1efa7bcc295d723b21",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/handoff/SKILL.md",
+      "hash": "1a56957440917ffb5706db1f27d81c7d1a679d35eb8541516091c2c51411f9d5",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/web-design-guidelines/SKILL.md",
+      "hash": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/code-review/skills.sh",
+      "hash": "4dca66ed3f4330d109a94d67354204835e9224720908283cb102e39fee6b5302",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/code-review/SKILL.md",
+      "hash": "c56b6957af1eb2b4054cc1a8f569570a52e084cb55967fd1ad6f80b70d501722",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/loop-verifier/SKILL.md",
+      "hash": "fe6eade94c19c78940adc067389642c8868670ef2cf42654643d26affa41ca75",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/ponytail/SKILL.md",
+      "hash": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/baseline-ui/SKILL.md",
+      "hash": "fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/uv-workflow-expert/SKILL.md",
+      "hash": "b5dbd228d91dc0aa14efa71fd056df07f538bf987a9286427ecfdf50f6d59326",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/uv-workflow-expert/references/pyproject-lockfile.md",
+      "hash": "723ce15006f6edf2a7aab5f23ef16cb7b81527eb4358b2d944e0e5b9c29fe02c",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/ponytail-audit/SKILL.md",
+      "hash": "6dad8c4c3527ea03cb82ed808f03724cc932e1da33f1778178abda19a1dbbcd3",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/local-semantic-exploration/SKILL.md",
+      "hash": "fd0b2d5e7496d22eb652006f2600c770adaafe4d597ce08552e5e5ad78d7503e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/mise-orchestration-expert/SKILL.md",
+      "hash": "15ef468a7d526965a3dbf619a079673838667ec57dff1f4ab280aecbc202056b",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/recall/EXAMPLES.md",
+      "hash": "67f2d639bd4fde728b121fea7f8bc362fca13ded706216141feca8e61613cc29",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/recall/SKILL.md",
+      "hash": "718ab72876b57c13d93e1103942556f2cb6cd929bcd43a5217bf6b42f96dc03e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/memory-graph/SKILL.md",
+      "hash": "35e0f85177f019cfc21db7033d28764579fe3034a5c4d4e30f6153700fbd2c05",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/astro-create-component/SKILL.md",
+      "hash": "a4804efcd7591caa3ed930ad3d266ed4f2b8a9ce2ff7e3b3d0d9a2050eb0ddb8",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/tailwind-css/SKILL.md",
+      "hash": "233dadb5ad958d30a0fb8be6f6807ec04b1b7121eaaaeeaf09ec00b4d35a9ecf",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/tailwind-css/skill-rules-fragment.json",
+      "hash": "9dcab9027faeeb1f73f5b2bc527e9293bc856c4f196ef4ad957cbaf298056cf0",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/tailwind-css/resources/utility-patterns.md",
+      "hash": "5ecb6c694dd7b37eb782286548cc3705141f5e68f1c1e37ed993782556a3d6f0",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/tailwind-css/resources/component-library.md",
+      "hash": "161b182835e4855f9e4b3fcff9b4f729352c02db39cc584d4a9385c9d45d9069",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/tailwind-css/resources/configuration.md",
+      "hash": "20da8561a1532a4fe08bed9e3b54ec2d28f439687a7ff0a2d53bd694d3b74252",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/SKILL.md",
+      "hash": "67770e66d149ee27c63aac9429500ecfeaddb2a3b66dc0215a315deb37e26d29",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/eval-viewer/generate_review.py",
+      "hash": "23ce871df91f5ba36eedc909ecec57a95bcf7464e81fbe36054f6893daa6d622",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/eval-viewer/viewer.html",
+      "hash": "a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/references/schemas.md",
+      "hash": "8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/run_eval.py",
+      "hash": "48779be4c8c7f24e0903880cdf9acd331fc4c09bdb52e7915359f7196ad224b7",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/package_skill.py",
+      "hash": "d47632c96bcc329e7077a2893f5dff2c819b37c7eee6d8ec6d6cf0d953a42412",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/quick_validate.py",
+      "hash": "969eb376f50a8791e9c64f1d5d3526ccba6f5d18a8f9683d9ae5b1df06f1a617",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/improve_description.py",
+      "hash": "bdee1126c5848712135996fc522d89d591fd51f58e38a0b3e477e7522808d4c8",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/aggregate_benchmark.py",
+      "hash": "d0caecd506ae11f122a97e8013defecb8d6881e00410f339eceaeebe6422bfe5",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/__init__.py",
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/run_loop.py",
+      "hash": "776284d29585b6f9c89ef1403d46f5150a875838e1523bc5b4bf6dd3cd3914ee",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/generate_report.py",
+      "hash": "1190ce9d36d60bcfe6307230f3a008fc5f14d24c3bf0f6f42ffb8009ea8b0a80",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/skill-creator/scripts/utils.py",
+      "hash": "bba553df06b02653e9327d09083db1631a6a3d7bd841e5cce8c85c92dc29af25",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/adr-generator/SKILL.md",
+      "hash": "fa5d665a5b8584e6d6c0f87bc3adf8c486d3d48f8d243c69dcdccec8b48bc17a",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/japanese-tech-writing/SKILL.md",
+      "hash": "768286a5ba191187a585d5bc03d5e60931ad67dc3667985ec986a8efc53e1cce",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/commit-context/EXAMPLES.md",
+      "hash": "370fecafbad5a7b467499da038863b383cdd740037c2f29758e43f56c6f064d2",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/commit-context/SKILL.md",
+      "hash": "11a6e724628cca46134f153925fabd4c29c3fdad09c132d8992705a5c22bb032",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/semble/SKILL.md",
+      "hash": "40155749352ce1396a14e20be9f60dc9a765797c04aa131d7ca0b7c6d6bb26ce",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/SKILL.md",
+      "hash": "0f662a6ab4955b9146a138a38b73a619b27fa1448ef71e27fcc57f67d3ad0267",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/revision-guide.md",
+      "hash": "27641d1a2aa5b41821d3da186ddf4139dc091c5dd8fb20544d814675b863433a",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/examples.md",
+      "hash": "bc37c36ebda975351e2949f05990b7202737a3f5b1f95f53584158e9a6d1e99d",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/forbidden-patterns.md",
+      "hash": "62e91c2d6140d40d7cf640df7141c3ed91799a26ef59ea1871ab2dfb131b5175",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/eval-rubric.md",
+      "hash": "77a49a4d0f70a51d4e595dec3ab236543b404edab5c6ccafb57c3f1f68d4ae65",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/diagnose.md",
+      "hash": "e3c80cdeada823d34d003f83df1e9cbc0e07fbdf109b5c8f7a796a889a00d5a4",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/writing-constitution.md",
+      "hash": "e5912d779c4298bd87f973c0a798dbee198e0f3201f92212e5edde0a27968da0",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/translationese.md",
+      "hash": "09b3da1ebf4c663be9cb0bf9ed5bade476ba10804509e6ca6dc22dc15129f827",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/readability-antipatterns.md",
+      "hash": "10418600db75d12da4ba7ca6d76cc9d0bc60e305ae4e75fa90f28c2aa76317b0",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/genre-notes.md",
+      "hash": "d5b2f7ecda12649efc26ef4a716fe6b2d4c03568b674dc5a06842f90cf6e8a6f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/manual-checklist.md",
+      "hash": "19eda8c3098e941c593bb3d4018b9b1f284f3c184db140c799623a07e91c487c",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/readability-principles.md",
+      "hash": "6a495446fe6828968371d24a1b628d28a37842ae0fd0e4f11162b57a7f9c4d70",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/doctypes/report.md",
+      "hash": "28f0cd6cef86fda5cb0bc236b9d1bb1d3d09892aacf5f813bec4f7c4cd84ea8f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/doctypes/guide.md",
+      "hash": "4b9db16365ea305c71eb9a59faedfc73620fd93d09721dc29292951994ba239d",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/doctypes/slide.md",
+      "hash": "1ca8db97566ad053cdb0115a72e12099f94648c5ba3a3d0bd6d33bf91c7f59d8",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/doctypes/minutes.md",
+      "hash": "de38887be3def7cd35e1b1ffbdf10c21a9c4601fb528f3022f14512df3bc8129",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/references/doctypes/memo.md",
+      "hash": "d74be03c71e992f4c070fe42249e1cfc6faa87efc7438c6f5aa2659d831e17f5",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/terms.py",
+      "hash": "304acb82d8d8cb8a2f45b5efc1110f407e2316d23c13bfc8734670fc1ac81e19",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/semantic.py",
+      "hash": "c14909618677ee66c6f67a0cc81bc9ced9951f2ffd9727182e5e0de6b2d1d667",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/outline.py",
+      "hash": "9b0478364f76c6aeed2befc8f4ee1aa4aa1ec6789eca45fb7b9958ccaed7ca80",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/textcore.py",
+      "hash": "ea363ed8611256afb07b0ce83b478c2d559a910d00bfa152d9244f60025da1f2",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/calibrate.py",
+      "hash": "7409007f511524fafe7eaf026f8d693a0829d0bc0845b9e35092ea61deb411d8",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/lint.py",
+      "hash": "576fb564126b6a81feadc88969a0ec8fb8fc7a755899e5b90fe91981e644881a",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/__pycache__/textcore.cpython-314.pyc",
+      "hash": "92f62dcbce8600a16a93ea7931638385ccd53ec012e61571cc2d150a6b54f388",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/fixtures/natural.md",
+      "hash": "218c4e52cf0e231ba8c9192fc8f23b49de40d0b3463419a6697dea787862572e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/scripts/fixtures/ai-smelly.md",
+      "hash": "c84979246c11005139ba35afe4e6c5f0a716cf2f8d7e9ac647efffe1b1c5c558",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/natural-japanese/assets/style-profile-template.md",
+      "hash": "d43a199e1399c73a41f332c45c5cf2321457fd49391b0a5bec23e52ef6fb5541",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/ponytail-review/SKILL.md",
+      "hash": "14d491850beb2e06855febad6c775faad801f348de5d44cad90b7edce8d795c8",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/dotfiles-infrastructure-expert/SKILL.md",
+      "hash": "d76dfcca01f92f84ada9caeef69eb993115b4b9f1a91e08a47d2cacd4c18a3e3",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/harness-spec-updater/SKILL.md",
+      "hash": "7c3f75029d473067c69e2ab1369abb2a7e280e2a656a70ff6d08069f8e4e6e94",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/harness-spec-updater/references/codex-spec.md",
+      "hash": "723f0a4ea820595795785eeb15c091439d506a242d4937d0b0f826824518b680",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/harness-spec-updater/references/claude-code-spec.md",
+      "hash": "288bb1fb9d48a647372f9bc744788bddc499467dedb9ed7d8ecb6cbb5109a51e",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/harness-spec-updater/references/antigravity-spec.md",
+      "hash": "31ced0551eb814681c7e82d7d2ac5443020a3def0f6fe62a3bc7ee0f829502cd",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/harness-spec-updater/references/INDEX.md",
+      "hash": "d6ba7980f3c201d20f556e476ea855d7daa01d5ef405a1d17a022bb14eb659a4",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/harness-spec-updater/references/pi-spec.md",
+      "hash": "12cccf39749647b758137020c1aa6ae28549926d7a6a8fe3695857a67e35c2bd",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/loop-orchestrator/SKILL.md",
+      "hash": "648a7771cb116b60c41670085fb6672c495aaf72af2e38fd9ad32f478fb128c4",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/loop-orchestrator/scripts/run_loop.py",
+      "hash": "07982b7ee2736dc96c1409efa04b6b68a996c841877b7aa8fc480daa892f9b33",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+      "hash": "4326fab5c92a0b4c420a70196254040105cd794026562130b59bf1a6db3e4baa",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md",
+      "hash": "307dcb3e24d292715c4a041190e7bb135646a37eb6187619ae01d000a634a4ad",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md",
+      "hash": "f372e919940e335468ba1ae09f99026c3986a345f7fe26f8068f132e199f52a5",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/AI-AND-LLM.md",
+      "hash": "7335a95c43554eadefcf03ece639291bb0e038c398a179299e3887ffe06bd2ef",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/RECONNAISSANCE.md",
+      "hash": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "hash": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "hash": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/MEMORY-SAFETY-AND-BINARY.md",
+      "hash": "7c8b0dccfb35315cca2455509674d49632b2fe37e1f3aac16c1a496a7e9924a7",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/validate-findings.cjs",
+      "hash": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/CLOUD-AND-DEPLOYMENT.md",
+      "hash": "3c80f3088be22345e07b057c056d6ed99fe2b0304f794398964f7ccd5a496ca3",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/SKILL.md",
+      "hash": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/report-schema.json",
+      "hash": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/WEB-PROTOCOL-AND-AUTH.md",
+      "hash": "4f3066dffa23c5635859187be9b96c32f2aff29a688186b91ff0c63e47d62b5c",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/ATTACK-CLASSES.md",
+      "hash": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md",
+      "hash": "8b73816fa5b3697c9c40977f0c836b40f01d6e81929ff2720fe83ce089e9a619",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/CLIENT-SIDE.md",
+      "hash": "613f6b98f86083e045525c5b60154ffdab122bac35f1e05eb17488e6e453370c",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+      "hash": "58eae8ee0ca6a46611c501ec5a3ab47fdff88dd7db0d8d74789bbf8bb19d8cb2",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "hash": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/HUNTING.md",
+      "hash": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/security-audit/validate-findings.test.cjs",
+      "hash": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/forget/EXAMPLES.md",
+      "hash": "8364e9d2d30c0e4872c5eb95f000a1c4aa9b774d082a31c95b337e8c1d42b7aa",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/forget/SKILL.md",
+      "hash": "3f3cd1fb3da22be2583f7506065a803bb0fa261087d07152787f32ed5a2f734f",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/loop-runner/SKILL.md",
+      "hash": "3056c15040fe634290963993a142371569869eda526fe2e353d89dde542ea688",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/frontend-design/SKILL.md",
+      "hash": "1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/pi-subagents/SKILL.md",
+      "hash": "f6d99abf3b5fdb951d625f92702f683e80581a2f5ba08836c716d691f2d18716",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/pi-subagents/extensions/closed-loop-coordinator.ts",
+      "hash": "30a1ee166e40420a4631106ae59bce7c246afe4efa8a05b110384b915fe221b7",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/pi-subagents/scripts/closed_loop_coordinator.py",
+      "hash": "41819196035e139f1360bcfb35948725329be9b2f03e4e4a0477b3f150c842e5",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/loop-patterns/SKILL.md",
+      "hash": "e9095beabac4f13b9270e91f2770bd5a7cb5f54c9b7de5007b42d334241ef5b9",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/remember/EXAMPLES.md",
+      "hash": "9589ce0d511f7bbb79f05376229fcd2f53b90b2091830cefc9c56a358a4f3d21",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/remember/SKILL.md",
+      "hash": "f68701ff5cdf65b8a4b53941d9c34b207f357536ea84cd416ff69771769bafe1",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/astro-best-practices/SKILL.md",
+      "hash": "63b3e2f49db8ea664c84ecd2148659b75f0a01a48f0c718f5761b9fc88e202f4",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/search-first/SKILL.md",
+      "hash": "e3d2b0724e9e1beca6676a5738ddd606de5ba0de4b1c3b89322733c9e04dc356",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/portfolio-maintenance/SKILL.md",
+      "hash": "f38292cfa197572e4062de55d4a2661d63c49c880bac1b1f8605cbd812211124",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/shell-scripting-expert/SKILL.md",
+      "hash": "317783069e4d0eb8409ba9eaa3f652c7366aaddd51304b4c9284f5427d41bb30",
+      "origin": "skills"
+    },
+    {
+      "path": "skills/crystallize/SKILL.md",
+      "hash": "e15b83bed9331c1e9b1f8e005ab5a2005eec87bb81cf889286fb365179b62bcd",
+      "origin": "skills"
+    }
+  ],
+  "agenda": null
+}

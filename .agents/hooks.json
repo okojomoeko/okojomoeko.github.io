@@ -1,0 +1,79 @@
+{
+  "semble": {
+    "semble-pre-tool": {
+      "enabled": true,
+      "PreToolUse": [
+        {
+          "matcher": "grep_search|find_by_name|view_file|Read|Grep|Glob",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "python3 -m xhs.hooks.semble_guard"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "agentmemory": {
+    "agentmemory-pre-start": {
+      "enabled": false,
+      "PreInvocation": [
+        {
+          "type": "command",
+          "command": "node ~/.gemini/hooks/agentmemory/session-start.mjs"
+        }
+      ]
+    },
+    "agentmemory-pre-tool": {
+      "enabled": false,
+      "PreToolUse": [
+        {
+          "matcher": "replace_file_content|view_file|write_to_file|call_mcp_tool|run_command|Edit|Write|Read|Glob|Grep",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "node ~/.gemini/hooks/agentmemory/pre-tool-use.mjs"
+            }
+          ]
+        }
+      ]
+    },
+    "agentmemory-session-stop": {
+      "enabled": false,
+      "SessionStop": [
+        {
+          "type": "command",
+          "command": "node ~/.gemini/hooks/agentmemory/session-end.mjs"
+        }
+      ]
+    }
+  },
+  "rtk": {
+    "rtk-pre-tool": {
+      "enabled": true,
+      "PreToolUse": [
+        {
+          "matcher": "run_command|run_shell_command",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "rtk hook gemini"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "done-probe": {
+    "done-probe": {
+      "enabled": true,
+      "Stop": [
+        {
+          "type": "command",
+          "command": "xhs probe check --agent antigravity"
+        }
+      ]
+    }
+  }
+}

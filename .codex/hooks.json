@@ -1,0 +1,18 @@
+
+
+
+{
+  "version": 1,
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "xhs probe check --agent codex"
+          }
+        ]
+      }
+    ]
+  }
+}

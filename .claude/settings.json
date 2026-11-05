@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "outputStyle": "Explanatory",
+  "verbose": true,
+  "disableAllHooks": false,
+  "cleanupPeriodDays": 30,
+  "dangerouslySkipPermissions": false,
+  "autoUpdatesChannel": "latest",
+  "autoMemoryEnabled": true,
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "xhs probe check --agent claude-code"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "qwopus3.8-27b-flash-abliterated-mxfp8-vision-mtplx",
+  "enableAllProjectMcpServers": false,
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npx prettier *)",
+      "Bash(npx eslint *)",
+      "Bash(pnpm test *)",
+      "Bash(yarn test *)",
+      "Bash(bun test *)",
+      "Bash(ruff *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(git branch)",
+      "Bash(git tag)",
+      "Bash(git rev-parse *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git switch *)",
+      "Bash(git checkout -b *)",
+      "Bash(ls *)",
+      "Bash(readlink *)",
+      "Bash(file *)",
+      "Bash(stat *)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "Bash(find *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(which *)",
+      "Bash(wc *)",
+      "Bash(strings *)",
+      "Bash(uv run *)",
+      "Bash(pytest *)",
+      "Bash(make test *)",
+      "Bash(cargo test *)",
+      "Bash(semble *)",
+      "Bash(zg *)",
+      "mcp__semble__*",
+      "mcp__zvec_grep__*",
+      "mcp__agentmemory__*",
+      "mcp__codebase_memory__*",
+      "mcp__codebase_memory_mcp__*",
+      "mcp__codegraph__*",
+      "mcp__cocoindex__*",
+      "mcp__graphify__*",
+      "mcp__deepwiki__*",
+      "mcp__context7__*",
+      "WebFetch(domain:antigravity.google)"
+    ],
+    "deny": [
+      "Read(~/.ssh/**)",
+      "Read(~/.gnupg/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.azure/**)",
+      "Read(~/.kube/**)",
+      "Read(~/.config/gcloud/**)",
+      "Read(~/.npmrc)",
+      "Read(~/.git-credentials)",
+      "Read(~/.config/gh/**)",
+      "Read(~/.docker/**)",
+      "Read(~/Library/Keychains/**)",
+      "Read(~/Library/Application Support/**)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(*.env)",
+      "Read(*.pem)",
+      "Read(*.key)",
+      "Read(*.pkcs12)",
+      "Read(*.pfx)",
+      "Read(id_rsa*)",
+      "Read(id_ed25519*)",
+      "Edit(~/.bashrc)",
+      "Edit(~/.zshrc)",
+      "Edit(~/.profile)",
+      "Edit(~/.zprofile)",
+      "Edit(~/.gitconfig)",
+      "Edit(~/.gemini/**)",
+      "Edit(~/.codex/**)",
+      "Edit(~/.claude/**)",
+      "Edit(~/.pi/**)",
+      "Bash(sudo *)",
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~/*)",
+      "Bash(mkfs *)",
+      "Bash(dd if=*)",
+      "Bash(chmod -R 777 /)",
+      "Bash(chmod -R 777 *)",
+      "Bash(git filter-branch *)",
+      "Bash(git filter-repo *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(nc *)",
+      "Bash(ssh *)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git fetch *)",
+      "Bash(git clone *)",
+      "Bash(git remote *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -f*)",
+      "Bash(git rebase *)",
+      "Bash(git branch -D *)",
+      "Bash(git branch -d *)",
+      "Bash(pip install *)",
+      "Bash(uv add *)",
+      "Bash(uv pip install *)",
+      "Bash(npm install *)",
+      "Bash(npm i *)",
+      "Bash(yarn add *)",
+      "Bash(pnpm add *)",
+      "Bash(cargo install *)",
+      "Bash(gh *)",
+      "Bash(docker *)",
+      "Bash(docker compose *)"
+    ],
+    "defaultMode": "default",
+    "additionalDirectories": [
+      "~/.cache",
+      "~/.uv",
+      "~/.npm",
+      "~/.cargo",
+      "~/.local/share",
+      "~/.local/state"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false,
+    "autoAllowBashIfSandboxed": true,
+    "filesystem": {
+      "denyRead": [
+        "./.env",
+        "./.env.*",
+        "*.env",
+        ".env.*"
+      ],
+      "denyWrite": [
+        "~/.bashrc",
+        "~/.zshrc",
+        "~/.profile",
+        "~/.zprofile",
+        "~/.gitconfig",
+        "~/.gemini/**",
+        "~/.codex/**",
+        "~/.claude/**",
+        "~/.pi/**"
+      ],
+      "allowWrite": [
+        "~/.cache",
+        "~/.uv",
+        "~/.npm",
+        "~/.cargo",
+        "~/.local/share",
+        "~/.local/state"
+      ]
+    },
+    "network": {
+      "allowedDomains": [
+        "antigravity.google"
+      ]
+    }
+  },
+  "env": {
+    "DISABLE_TELEMETRY": "1",
+    "DO_NOT_TRACK": "1",
+    "CLAUDE_MODEL": "qwopus3.8-27b-flash-abliterated-mxfp8-vision-mtplx"
+  },
+  "protectedFiles": [
+    "*.pem",
+    "*.key",
+    "*.pkcs12",
+    "*.pfx",
+    ".env",
+    ".env.*",
+    "*.env",
+    "id_rsa*",
+    "id_ed25519*"
+  ],
+  "mcpServers": {
+    "cognee": {
+      "command": "python3",
+      "args": [
+        "-c",
+        "import sys, subprocess, signal; sig_handler = lambda s, f: (p.terminate() if p.poll() is None else None, sys.exit(0)); signal.signal(signal.SIGTERM, sig_handler); signal.signal(signal.SIGINT, sig_handler); p = subprocess.Popen(['uvx', 'cognee-mcp']); p.wait(); sys.exit(0)"
+      ],
+      "env": {
+        "LLM_PROVIDER": "custom",
+        "LLM_ENDPOINT": "http://127.0.0.1:8000/v1",
+        "LLM_MODEL": "openai/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit",
+        "LLM_API_KEY": "1234",
+        "LLM_INSTRUCTOR_MODE": "json_schema_mode",
+        "EMBEDDING_PROVIDER": "openai_compatible",
+        "EMBEDDING_ENDPOINT": "http://127.0.0.1:8000/v1",
+        "EMBEDDING_MODEL": "Qwen3-VL-Embedding-2B-mlx-nvfp4",
+        "EMBEDDING_API_KEY": "1234",
+        "EMBEDDING_DIMENSIONS": "2048",
+        "COGNEE_VECTOR_DB": "lancedb",
+        "COGNEE_GRAPH_DB": "kuzudb",
+        "COGNEE_SKIP_CONNECTION_TEST": "true"
+      }
+    },
+    "codegraph": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@colbymchenry/codegraph@latest",
+        "serve",
+        "--mcp"
+      ],
+      "env": {}
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--extension"
+      ],
+      "env": {}
+    },
+    "zvec-grep": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zvec/zvec-grep",
+        "server",
+        "--stdio"
+      ],
+      "env": {
+        "ZVEC_GREP_EMBEDDING": "local/qwen3-embedding-0.6b",
+        "ZVEC_GREP_DEVICE": "auto"
+      }
+    },
+    "semble": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "semble[mcp]",
+        "semble"
+      ],
+      "env": {}
+    },
+    "codegraph-context": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "codegraphcontext",
+        "cgc",
+        "mcp",
+        "start"
+      ],
+      "env": {}
+    },
+    "agentmemory": {
+      "command": "agentmemory",
+      "args": [
+        "mcp"
+      ],
+      "env": {
+        "AGENTMEMORY_URL": "http://localhost:3111",
+        "AGENTMEMORY_FORCE_PROXY": "1",
+        "AGENTMEMORY_TOOLS": "all",
+        "AGENTMEMORY_SLOTS": "true",
+        "AGENTMEMORY_REFLECT": "true"
+      }
+    }
+  }
+}

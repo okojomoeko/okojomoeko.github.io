@@ -1,0 +1,224 @@
+model_provider = "omlx"
+model = "qwopus3.8-27b-flash-abliterated-mxfp8-vision-mtplx"
+model_auto_compact_token_limit = 130000
+model_catalog_json = "~/.codex/model-catalog.local.json"
+personality = "pragmatic"
+service_tier = "flex"
+file_opener = "vscode"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+web_search = "live"
+developer_instructions = "Follow project AGENTS.md guidelines. Use your native file reading and editing tools directly when working with specified files. When searching or exploring the codebase, invoke available MCP tools directly."
+notify = ["~/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended", "--previous-notify", "[\"terminal-notifier\",\"-title\",\"Codex ECC\",\"-message\",\"Task completed!\",\"-sound\",\"default\",\"~/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient\",\"turn-ended\",\"--previous-notify\",\"[\\\"terminal-notifier\\\",\\\"-title\\\",\\\"Codex ECC\\\",\\\"-message\\\",\\\"Task completed!\\\",\\\"-sound\\\",\\\"default\\\"]\"]"]
+
+[sandbox_workspace_write]
+network_access = true
+writable_roots = ["~/.cache", "~/.uv", "~/.npm", "~/.cargo", "~/.local/share", "~/.local/state"]
+
+[approvals]
+trusted_commands = ["npm run *", "npm test *", "npx prettier *", "npx eslint *", "pnpm test *", "yarn test *", "bun test *", "ruff *", "git status", "git diff *", "git log *", "git show *", "git branch", "git tag", "git rev-parse *", "git add *", "git commit *", "git switch *", "git checkout -b *", "ls *", "readlink *", "file *", "stat *", "cat *", "grep *", "find *", "head *", "tail *", "which *", "wc *", "strings *", "uv run *", "pytest *", "make test *", "cargo test *", "semble *", "zg *"]
+
+[hooks]
+path = "~/.codex/hooks.json"
+
+[features]
+multi_agent = true
+js_repl = false
+fast_mode = true
+steer = true
+goals = true
+memories = true
+hooks = true
+sqlite = true
+plugins = true
+in_app_browser = true
+browser_use = true
+browser_use_external = true
+computer_use = true
+image_generation = true
+tool_suggest = true
+plugin_sharing = true
+skill_mcp_dependency_install = true
+shell_tool = true
+unified_exec = true
+shell_snapshot = true
+terminal_resize_reflow = true
+codex_git_commit = true
+apps = true
+personality = true
+tui_app_server = true
+workspace_dependencies = true
+tool_call_mcp_elicitation = true
+guardian_approval = true
+collaboration_modes = true
+multi_agent_v2 = true
+context_management = true
+tool_search = true
+request_permissions = true
+shell_snapshot_v2 = true
+exec_permission_approvals = true
+agent_message_board = true
+code_mode = true
+async_compaction = true
+concurrent_reasoning_summaries = true
+cwd_relative_turn_diffs = true
+daemon_auto_start = true
+runtime_agent_instances = true
+
+[profiles.strict]
+approval_policy = "on-request"
+sandbox_mode = "read-only"
+web_search = "live"
+
+[profiles.yolo]
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "live"
+
+[profiles.yolo-safe]
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "live"
+
+[agents]
+max_concurrent_threads_per_session = 6
+max_depth = 1
+
+[projects."~/work/neuro-doc"]
+trust_level = "trusted"
+
+[projects."~/temp"]
+trust_level = "trusted"
+
+[projects."~/work/hermes-sandbox"]
+trust_level = "trusted"
+
+[projects."~/ai-agent-settings"]
+trust_level = "trusted"
+
+[projects."/Users/okojo/ai-agent-settings"]
+trust_level = "trusted"
+
+[projects."/Users/okojo/work/hermes-sandbox"]
+trust_level = "trusted"
+
+[projects."~/work/cross-harness-settings"]
+trust_level = "trusted"
+
+[projects."/Users/okojo/work/cross-harness-settings"]
+trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+
+[marketplaces.openai-bundled]
+last_updated = "2026-06-15T12:22:46Z"
+source_type = "local"
+source = "/Users/okojo/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-06-15T01:17:24Z"
+source_type = "local"
+source = "/Users/okojo/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[model_providers.omlx]
+name = "oMLX"
+base_url = "http://127.0.0.1:8000/v1"
+env_key = "OMLX_API_KEY"
+wire_api = "responses"
+
+[model_providers.ollama-launch]
+name = "Ollama"
+base_url = "http://localhost:11434/v1/"
+wire_api = "responses"
+
+[desktop]
+ambient-suggestions-enabled = false
+conversationDetailMode = "STEPS_COMMANDS"
+
+[mcp_servers.cognee]
+command = "python3"
+args = ["-c", "import sys, subprocess, signal; sig_handler = lambda s, f: (p.terminate() if p.poll() is None else None, sys.exit(0)); signal.signal(signal.SIGTERM, sig_handler); signal.signal(signal.SIGINT, sig_handler); p = subprocess.Popen(['uvx', 'cognee-mcp']); p.wait(); sys.exit(0)"]
+enabled = true
+
+[mcp_servers.cognee.env]
+LLM_PROVIDER = "custom"
+LLM_ENDPOINT = "http://127.0.0.1:8000/v1"
+LLM_MODEL = "openai/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit"
+LLM_API_KEY = "1234"
+LLM_INSTRUCTOR_MODE = "json_schema_mode"
+EMBEDDING_PROVIDER = "openai_compatible"
+EMBEDDING_ENDPOINT = "http://127.0.0.1:8000/v1"
+EMBEDDING_MODEL = "Qwen3-VL-Embedding-2B-mlx-nvfp4"
+EMBEDDING_API_KEY = "1234"
+EMBEDDING_DIMENSIONS = "2048"
+COGNEE_VECTOR_DB = "lancedb"
+COGNEE_GRAPH_DB = "kuzudb"
+COGNEE_SKIP_CONNECTION_TEST = "true"
+
+[mcp_servers.codegraph]
+command = "npx"
+args = ["-y", "@colbymchenry/codegraph@latest", "serve", "--mcp"]
+enabled = true
+
+[mcp_servers.codegraph.env]
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@latest", "--extension"]
+startup_timeout_sec = 30
+enabled = true
+
+[mcp_servers.playwright.env]
+
+[mcp_servers.zvec-grep]
+command = "npx"
+args = ["-y", "@zvec/zvec-grep", "server", "--stdio"]
+enabled = true
+
+[mcp_servers.zvec-grep.env]
+ZVEC_GREP_EMBEDDING = "local/qwen3-embedding-0.6b"
+ZVEC_GREP_DEVICE = "auto"
+
+[mcp_servers.semble]
+command = "uvx"
+args = ["--from", "semble[mcp]", "semble"]
+enabled = true
+
+[mcp_servers.codegraph-context]
+command = "uvx"
+args = ["--from", "codegraphcontext", "cgc", "mcp", "start"]
+enabled = true
+
+[mcp_servers.codegraph-context.env]
+
+[mcp_servers.agentmemory]
+command = "agentmemory"
+args = ["mcp"]
+startup_timeout_sec = 30
+enabled = true
+
+[mcp_servers.agentmemory.env]
+AGENTMEMORY_URL = "http://localhost:3111"
+AGENTMEMORY_FORCE_PROXY = "1"
+AGENTMEMORY_TOOLS = "all"
+AGENTMEMORY_SLOTS = "true"
+AGENTMEMORY_REFLECT = "true"

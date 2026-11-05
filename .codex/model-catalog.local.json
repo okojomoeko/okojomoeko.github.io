@@ -1,0 +1,568 @@
+
+
+
+
+{
+  "models": [
+    {
+      "slug": "Qwen3.8-27B-Brainwaves-2M-qx64-hi-mlx",
+      "display_name": "Qwen 3.8 27B Brainwaves (2M Reasoning)",
+      "context_window": 2097152,
+      "max_context_window": 2097152,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 1100,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx",
+      "display_name": "Gemma 4 26B A4B IT QAT Uncensored Heretic",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 1050,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Ornith-1.5-9B-MLX-6bit",
+      "display_name": "Ornith 1.5 9B (6-bit Fast Workhorse)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 950,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-Tess-1M-qx64-hi-mlx",
+      "display_name": "Qwen 3.6 27B Architect Polaris (1M Reasoning)",
+      "context_window": 1048576,
+      "max_context_window": 1048576,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 1000,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Huihui-Qwen3.8-27B-abliterated-mlx-6Bit",
+      "display_name": "Huihui Qwen 3.8 27B Abliterated (6-bit General/Coding)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 980,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Huihui-ThinkingCap-Qwen3.6-27B-abliterated-MLX-4bit",
+      "display_name": "Huihui ThinkingCap 27B (Abliterated Reasoning)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 960,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "ThinkingCap-Qwen3.6-27B-Alis-MLX-Dynamic",
+      "display_name": "ThinkingCap 27B Alis Dynamic (Reasoning)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 950,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "ThinkingCap-Qwen3.6-27B-OptiQ-4bit",
+      "display_name": "ThinkingCap Qwen 3.6 27B OptiQ (Daily Task)",
+      "context_window": 128000,
+      "max_context_window": 128000,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 940,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 128000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx",
+      "display_name": "Qwen 3.8 27B Fable Fusion F711 (Latest)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 930,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Qwen3.8-27B-Holodeck-mxfp4-mlx",
+      "display_name": "Qwen 3.8 27B Holodeck (mxfp4)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 920,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Qwen3.8-27B-oQ6e-mtp",
+      "display_name": "Qwen 3.8 27B oQ6e MTP (Multi-Token)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 910,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Qwen3.8-27B-AWQ-5.0bpw",
+      "display_name": "Qwen 3.8 27B AWQ (5.0bpw)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 900,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "nightmedia--Qwen3.6-27B-Architect-DS9-Polaris-Heretic-mxfp8-mlx",
+      "display_name": "Qwen 3.6 27B Architect DS9 Polaris Heretic (mxfp8)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 890,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "gemma-4-31B-it-heretic-z-mlx-6Bit",
+      "display_name": "Gemma 4 31B Heretic-Z (6-bit)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 880,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "gemma-4-31B-it-qat-uncensored-heretic-mlx-vlm-4Bit",
+      "display_name": "Gemma 4 31B QAT Heretic VLM (4-bit Vision/Code)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 870,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit",
+      "display_name": "Gemma 4 26B QAT Heretic VLM (4-bit Vision/Code)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 860,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "Ornith-1.0-35B-MLX-oQ4",
+      "display_name": "Ornith 1.0 35B (Coding Specialist)",
+      "context_window": 128000,
+      "max_context_window": 128000,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 850,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 128000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "mlx-community--Qwen3.5-9B-MLX-4bit",
+      "display_name": "Qwen 3.5 9B (Fast & Lightweight)",
+      "context_window": 262144,
+      "max_context_window": 262144,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 750,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "mlx-community--Llama-3.2-3B-Instruct-4bit",
+      "display_name": "Llama 3.2 3B Instruct (Ultra-Fast)",
+      "context_window": 131072,
+      "max_context_window": 131072,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 700,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 130000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    },
+    {
+      "slug": "LFM2.5-1.2B-JP-202606-MLX-6bit",
+      "display_name": "LFM 2.5 1.2B JP (Mini Japanese)",
+      "context_window": 128000,
+      "max_context_window": 128000,
+      "input_modalities": ["text"],
+      "shell_type": "shell_command",
+      "supported_reasoning_levels": [],
+      "supports_reasoning_summaries": false,
+      "supports_parallel_tool_calls": false,
+      "support_verbosity": true,
+      "supported_in_api": true,
+      "default_verbosity": "low",
+      "visibility": "list",
+      "priority": 650,
+      "base_instructions": "",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 128000
+      },
+      "experimental_supported_tools": [
+        "mcp"
+      ],
+      "supports_search_tool": true,
+      "web_search_tool_type": "text",
+      "apply_patch_tool_type": "freeform",
+      "use_responses_lite": false
+    }
+  ]
+}

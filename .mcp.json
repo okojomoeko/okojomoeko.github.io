@@ -1,0 +1,91 @@
+{
+  "mcpServers": {
+    "cognee": {
+      "command": "python3",
+      "args": [
+        "-c",
+        "import sys, subprocess, signal; sig_handler = lambda s, f: (p.terminate() if p.poll() is None else None, sys.exit(0)); signal.signal(signal.SIGTERM, sig_handler); signal.signal(signal.SIGINT, sig_handler); p = subprocess.Popen(['uvx', 'cognee-mcp']); p.wait(); sys.exit(0)"
+      ],
+      "env": {
+        "LLM_PROVIDER": "custom",
+        "LLM_ENDPOINT": "http://127.0.0.1:8000/v1",
+        "LLM_MODEL": "openai/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit",
+        "LLM_API_KEY": "1234",
+        "LLM_INSTRUCTOR_MODE": "json_schema_mode",
+        "EMBEDDING_PROVIDER": "openai_compatible",
+        "EMBEDDING_ENDPOINT": "http://127.0.0.1:8000/v1",
+        "EMBEDDING_MODEL": "Qwen3-VL-Embedding-2B-mlx-nvfp4",
+        "EMBEDDING_API_KEY": "1234",
+        "EMBEDDING_DIMENSIONS": "2048",
+        "COGNEE_VECTOR_DB": "lancedb",
+        "COGNEE_GRAPH_DB": "kuzudb",
+        "COGNEE_SKIP_CONNECTION_TEST": "true"
+      }
+    },
+    "codegraph": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@colbymchenry/codegraph@latest",
+        "serve",
+        "--mcp"
+      ],
+      "env": {}
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--extension"
+      ],
+      "env": {}
+    },
+    "zvec-grep": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zvec/zvec-grep",
+        "server",
+        "--stdio"
+      ],
+      "env": {
+        "ZVEC_GREP_EMBEDDING": "local/qwen3-embedding-0.6b",
+        "ZVEC_GREP_DEVICE": "auto"
+      }
+    },
+    "semble": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "semble[mcp]",
+        "semble"
+      ],
+      "env": {}
+    },
+    "codegraph-context": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "codegraphcontext",
+        "cgc",
+        "mcp",
+        "start"
+      ],
+      "env": {}
+    },
+    "agentmemory": {
+      "command": "agentmemory",
+      "args": [
+        "mcp"
+      ],
+      "env": {
+        "AGENTMEMORY_URL": "http://localhost:3111",
+        "AGENTMEMORY_FORCE_PROXY": "1",
+        "AGENTMEMORY_TOOLS": "all",
+        "AGENTMEMORY_SLOTS": "true",
+        "AGENTMEMORY_REFLECT": "true"
+      }
+    }
+  }
+}

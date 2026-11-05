@@ -5,3 +5,12 @@ node_modules/
 pnpm-lock.yaml
 test-results/
 playwright-report/
+.agents/
+.claude/
+.codex/
+.pi/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.mcp.json
+
